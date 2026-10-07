@@ -1,0 +1,1525 @@
+Artificial intelligence is a field of computer science focused on building systems that can perform tasks that normally require human intelligence. Machine learning is a major area of artificial intelligence. A machine learning model learns patterns from data and uses those patterns to make predictions.
+
+Supervised learning uses labeled training data. Each training example contains an input and an expected output. The model compares its prediction with the expected output and adjusts its parameters to reduce the error. Classification predicts categories, while regression predicts numerical values.
+
+Unsupervised learning works with data that does not have labeled outputs. Clustering groups similar examples together. Dimensionality reduction transforms data into a smaller representation while attempting to preserve important information.
+
+Deep learning uses neural networks with multiple layers. Neural networks contain parameters called weights and biases. During training,Deep learning uses neural networks witasures the error using a loss function, computes gradients using backpropagation, and updates the parameters using an optimization algorithm.
+
+A transformer is a neural network architecture designed to process sequences using attention. Attention allows each token to consider other tokens in the sequence. Query, key, and value representations are used to calculate attention scores.
+
+A language model predicts tokens. During training, a next-token language model receives a sequence of tokens and learns to predict the next token. The model produces logits for every possible token in its vocabulary. A probability distribution is obtained by applying softmax to the logits.
+
+Generative artificial intelligence systems can generate text, code, images, audio, and other types of content. Large language models are generative models trained on large collections of text. The quality of a language model depends on its architecture, training data, optimization process, and evaluation.
+
+Tokenization converts text into smaller units called tokens. A token can represent a word, part of a word, punctuation, or a byte-level representation. Byte pair encoding is a common tokenization method. The tokenizer maps tokens to integer token IDs that can be processed by a neural network.
+
+Embeddings represent discrete objects as continuous numerical vectors. Token embeddings map token IDs to vectors. Similar conceptEmbeddings represent discrete objects as continuous numerical vectors. Token embeddings map token IDs to vectors. Similar conceptEmbeddings represent discrete objects as continuous numerical vectors. Token embeddings map token IDs to vectors. Similar conceptEmbeddings represent discrete o model processes a batch, calculates a loss, computes gradients, and updates its parameters. This process is repeated for many iterations.
+
+Validation data is used to measure how well a model performs on data that was not used to update its parameters. Training loss measures performance on the training data. Validation loss can reveal overfitting when training loss continues to decrease while validation loss increases.
+Data engineering is the practice of collecting, transforming, storing, and delivering data for analytics and machine learning. A data engineer builds systems that move data from source systems into reliable storage and processing platforms.
+
+An ETL pipeline stands for extract, transform, and load. The extract stage obtains data from sources such as databases, APIs, files, and applications. The transform stage cleans and modifies the data. The load stage writes the transformed data into a target system.
+
+An ELT pipeline stands for extract, load, and transform. In an ELT architecture, raw data is loaded into a data warehouse or data lake before transformations are performed. Modern cloud data platforms commonly use ELT because storage and compute can be scaled independently.
+
+A data warehouse stores structured and processed data for analytics and reporting. Tables in a relational data warehouse contain rows and columns. A primary key uniquely identifies a record. A foreign key connects records between related tA data warehouse stores structured and processed data for analytics and reporting. Tables in a relational data warehouse contain rows and columns. A primary key uniquely identifies a record. A foreign key connects records between related tssing framework. Spark can process large datasets across multiple machines. Spark provides APIs for Python, Scala, Java, and SQL. PySpark is the Python API for Apache Spark.
+
+A data pipeline moves information through a sequence of processing steps. A pipeline may read dA data pipeline moves information through a sequence of processing steps. A pipeline may read dA data pipeline moves information through a sequence of processing steps. A pipeline may read dA data pipeline moves information through a sequence of processing steps. A pipelinty,A data pipeline moves information through a sequence of processing steps. A pipeline may read dA data pipeline moves information through a sequence of processing steps. A pipeline may read dA data pipeline moves information through a sequence of processing steps. A pipeline may read dA data pipeline moves information through a sequence of processing steps. A pipelinty,A data pipeline moves information through a sequence of processing steps. A pipeline may read dA data pipeline moves information through a sequence of processing steps. A pipeline may read dA data pipeline moves information through a sequence of processing steps. A pipeline may stgreSQL supports SQL queries, transactions, indexes, constraints, and many advanced database features. Applications can connect to PostgreSQL to store and retrieve structured data.
+
+Indexes improve database query performance by allowing the database to locate records more efficiently. However, indexes require additional storage and can increase the cost of write operations.
+
+A data engineer should design pipelines that are reliable, observable, maintainable, and scalable. Logging and monitoring help engineers identify failures. Tests can verify that transformations produce the expected results.
+Retrieval augmented generation is commonly called RAG. A RAG system retrieves relevant information from an external knowledge source before generating an answer. Retrieval can provide a language model with information that is not contained in its original training data.
+
+A basic RAG pipeline contains document loading, text splitting, embedding generation, vector storage, retrieval, prompt construction, and language model generation.
+
+Documents are divided into chunks because sending an entire collection to a language model is usually inefficient. Chunk size determines how much information each chunk contains. Chunk overlap preserves context between neighboring chunks.
+
+An embedding model converts text into numerical vectors. Texts with related meanings can have similar embeddings. A vector database stores embeddings and allows similarity searches.
+
+Cosine similarity measures the similarity between two vectors. A retrieval system can compare a query embedding with documCosine similarity measures the similarilaCosine similarity measures the similarity between two vectors. A retrieval system can compare a query embedding with documCosine similarity measures the similarilaCosine similarity measures the similarity between two vectors. A retrieval system can compare a query embe are added to a prompt that is given to the language model. The language model then generates a response using the retrieved context.
+
+A naive RAG system can fail when retrieval returns irrelevant documents. It can also fail when a question requires multiple retrieval steps. Retrieval quality is therefore an important part of RAG system design.
+
+Query rewriting changes a user's original question into a query that may produce better retrieval results. A query planner can break a complex question into smaller retrieval tasks.
+
+Corrective RAG evaluates retrieved documents before generating the final answer. If the retrieved information is not relevant, the system can rewrite the query and perform retrieval again.
+
+Agentic RAG adds reasoning and tool use to a retrieval system. An agent can decide which tool to use, retrieve information, evaluate the result, and continue the process when additional information is required.
+
+A RAG system should avoid inventing information that is not supported by retrieved evidence. A grounded response should use relevant retrieved context and clearly communicate uncertainty when evidence is insufficient.
+
+MetadatMetadatMetadatMetadatMetadatMetadatMetadatMetadatMetadatMetadatMetadatMetadatMetadatMetadatMetadatMetadatMetadatMetadatMetadatMetadatMetadatMetadatMetadatMetadatMetadatMetadatMetadatMetadatMetadatMetadatMetadat allows an application to preserve information from previous turns. Memory can contain recent messages, summaries, retrieved documents, or structured information.
+
+An enterprise RAG systAn enterprise RAG systAn enterprise RAG systAn enterprise RAG systAn enterprise RAG systAn enterprise RAG systAn enterprise RAG systAn enterprise RAG systAn enterprise RAG systAn enterprso users do not receive information they are not authorized to access.
+Python is a general purpose programming language commonly used for data engineering, machine learning, automation, and web development. Python uses indentation to define blocks of code.
+
+A variable stores a value that can be used by a program. Python provides built-in data structures including lists, tuples, dictionaries, and sets. A list is an ordered mutable collection. A tuple is an ordered immutable collection. A dictionary stores key-value pairs. A set stores unique values.
+
+A function is a reusable block of code. Functions can accept arguments and return values. Classes are used to create objects that combine data and behavior.
+
+An exception represents an error or unexpected condition during program execution. Python provides try and except statements for handling exceptions. Logging can record useful information about program execution and failures.
+
+A virtual environment isolates Python dependencies for a project. Packages can be installed using pip. A requirements file can record the packages required by an application.
+
+Git is a version control system used to track changes in source code. A Git repository contains the history of project changes. GitHub provides remote hosting for Git repositories and supports collaboration.
+
+Software testing verifies that code behaves as expected. Unit tests check individual components. Integration tests verify that multiple components work together.
+
+Clean code should be readable, maintainable, and easy to test. Meaningful variable names, sClean code should be readable, maintainable, and easy to test. Meaningful variable names, sClean code should be readable, maintainable, and easy to test. Model architecture, training, evaluation, and inference. A clear project structure makes experiments easier to reproduce and maintain.
+Machine learning is a branch of artificial intelligence that enables computers to learn patterns from data. Instead of writing every rule manually, engineers provide examples and allow an algorithm to learn a function that maps inputs to outputs.
+
+A machine learning dataset normally contains examples and features. A feature represents an input variable used by a model. A target represents the value that the model attempts to predict. In supervised learning, training examples contain both features and targets.
+
+Classification is a supervised learning task where the target belongs to a category. Examples include spam detection, sentiment classification, and image classification. Binary classification has two classes, while multiclass classification has more than two classes.
+
+Regression predicts continuous numerical values. Predicting house prices, temperature, sales revenue, or demand are examples of regression problems.
+
+Training a model means adjusting its parameters sTraining a model means adjusting its po the expected targets. A loss function measures prediction error. An optimizer uses gradients to update model parameters.
+
+A training dataset is used to update model parameters. A validation dataset is used to select models and hyperparameters. A test dataset is used for final evaluation. Keeping these datasets separate helps estimate how well a model generalizes to unseen examples.
+
+Overfitting occurs when a model learns the training data too closely and performs poorly on new data. Underfitting occurs when a model is too simple to capture important patterns. Regularization, dropout, more training data, and appropriate model size can help reduce overfitting.
+
+Accuracy measures the fraction of predictions that are correct. Precision measures how many predicted positive examples are actually positive. Recall measures how many actual positive examples were found. The F1 score combines precision and recall.
+
+A confusion matrix summarizes classification results using true positives, true negatives, false positives, and false negatives. It provides more information than accuracy when classes are imbalanced.
+
+Feature scaling changes numerical features to comparable ranges. Standardization commonly transforms values using their mean and standard deviation. Normalization can map values into a selected range.
+
+A neural network consists of layers of learnable parameters. Each layer transforms its input and passes the result to the next layer. Activation functions introduce nonlinearity into the network.
+
+A linear layer computes a weighted transformation of its input. The weights are learned during training. A bias provides an additional learnable offset.
+
+The sigmoid activatThe sigmoid activatThe sigmoid activatThe sigmoid activatThe sigmoid activatThe sigmoid activatThe sigmoid activatThe sigmoid activatThe sigmoid activatThe sigmoid activatThe sigmoid activatThe sigmoid activatThe sigmoid activatThe sigmoid mputes gradients of the loss with respect to model parameters. The optimizer then uses these gradients to update the parameters. This process is repeated across many batches.
+
+A batch is a group of training examples processed together. Batch size controls how many examples are processed in one optimization step. An epoch represents one complete pass through the training dataset.
+
+The learning rate controls how large parameter updates are. A learning rate that is too large can make training unstable. A learning rate that is too small can make training unnecessarily slow.
+
+Adam and AdamW are popular optimization algorithms. Adam uses estimates of first and second moments of gradients. AdamW separates weight decay from the gradient update.
+
+Dropout randomly Dropout randomly Dropout randomly Dropout randomly Dropout randomly Dropout randomly Dropout randomly Dropout randomly Dropout randomly Dropout randomly Dropout randomly Dropout randomly Dropout randomly Dropout randomly Dropout randomly Dropout randomly Dropout randomly Dropout randomly Dropout randomly Dropout randomly Dropout randomly Dropout randomly Dropout randomly Dropout randomly Dropoud perplexity. A classifier may use accuracy, precision, recall, and F1 score.
+
+A reproducible machine learning experiment records the dataset version, tokenizer, model configuration, optimizer, learning rate, batch size, number of epochs, and evaluation results.
+The Transformer is a neural network architecture based primarily on attention mechanisms. Transformers became important for natural language processing because they can process relationships between tokens efficiently.
+
+A sequence is represented as tokens. Each token is converted into an embedding vector. Positional information is added so the model can distinguish different positions in the sequence.
+
+Self-attention allows a token to interact with other tokens in the same sequence. The attention mechanism uses queries, keys, and values. Queries represent what a token is looking for, keys represent information available for matching, and values contain information that can be aggregated.
+
+Attention scores are computed by comparing queries with keys. The scores are scaled by the square root of the key dimension. A softmax operation converts the scores into weights. The weighted values are then combined to produce the attention output.
+
+Multi-head attention uses several attention heads. Each head can learn different relationships between tokens. The outputs from the heads are combined and projected back into the model embedding dimension.
+
+A causal language model must not use future tokens when predicting the current token. A A causal language model must not use future tokens when predicting the current token. A A causal language model must not use future tokens when predicting the current token. A A causanetA causal language model must not use future tokens when predicting the current token. A A causal language model must not use future tokens when predicting the current token. A A causal language model must not use future tokens when predicting the current token. A A causanetA causal langua in modern Transformer language models.
+
+The feed-forward network applies independent transformations to each token representation. A typical feed-forward network expands the embedding dimension, applies a nonlinear activation, and projects the result baThe feed-forward network applies independent transformations to each token representation. A typical feed-forward network expands the embedding dimension, applies a nonlinear activation, and projects the quence of token IDs and produces logits for the next token at every position. The logits can be converted into probabilities and used to select the next token.
+
+Greedy decoding selects the token with the highest probability. It is simple and deterministic but can produce repetitive text.
+
+Temperature modifies the sharpness of the probability distribution. Lower temperatures make generation more deterministic. Higher temperatures increase randomness.
+
+Top-k sampling restricts sampling to the k most probable tokens. The model then samples from this smaller candidate set.
+
+Top-p sampling selects the smallest group of tokens whose cumulative probability reaches a chosen threshold. This allows the number of candidates to change according to the probability distribution.
+
+Repetition penalties can reduce the probability of tokens that have already appeared. This can help prevent repetitive generation.
+
+The context length is the maximum number of tokens the model can process at one time. A longer context allows the model to use more previous information but increases computation and memory requirements.
+
+Token embeddings map vocabulary IDs to vectors. The embedding dimensionToken embeddings map vocabulary IDs to vectors. The embedding dimensionToken embeddings map vocabulary IDs to vectors. The emb The number of output logits equals the vocabulary size.
+
+Weight tying can share the token embedding matrix with the output projection matrix. This can reduce the number of parameters and is used in some language models.
+
+Cross entropy is commonly used to train autoregressive language models. The target at each position is the next token in the sequence.
+
+Perplexity is derived from language model loss and provides an interpretable measure of how uncertain a model is when predicting tokens. Lower perplexity generally indicates better language modeling performance on the evaluation data.
+
+A tokenizer and model must use the same vocabulary mapping. If the tokenizer changes, previously generated token IDs may no longer correspond to the same tokens.
+
+A language model trained from scratch requires a large and diverse dataset. A small dataset can demonstrate the architecture but usually cannot produce the quality of a large pretrained language model.
+A database stores and manages structured information. A relational database organizes information into tables containing rows and columns.
+
+SQL is a language used to query and manipulate relational databases. SELECT retrieves data. INSERT adds records. UPDATE modifies records. DELETE removes records.
+
+A primary key uniquely identifies each row in a table. A foreign key references a key in another table and represents a relationship between tables.
+
+A database schema defines tables, columns, data types, constraints, and relationships. Good schema design reduces unnecessary duplication and improves data consistency.
+
+Normalization is a database design technique that reduces redundant data. Normal forms provide rules for organizing related information into separate tables.
+
+A JOIN combines rows from multiple tables. An INNER JOIN returns matching rows. A LEFT JOIN keeps all rows from the left table and matching rows from the right table.
+
+An index provides an efficient structure for finding records. Indexes can An index provides an efficient structure for finding records. Indexes can An index provides an efficient structure for finding records. ItabAn index provides an efficient structure for finding records. Indexes can An index provides an efficient structure for finding records. Indexes can An index proiciAn index provides an efficient structure for finding records. Indexes can An index provides an efficient structure for finding records. Indexes canpenAn index provides an efficient structure for finding records. Indexes can An index provides an efficient structure for finding records. Indexes can An index provides amarily for analytics. Analytical queries often scan large amounts of data and aggregate information across many records.
+
+A fact table contains measurable business events such as orders, payments, or shipments. Dimension tables contain descriptive information such as customers, products, and locations.
+
+A star schema contains a central fact table connected to dimension tables. Star schemas are common in analytical data warehouses.
+
+OLTP systems support operational transactions such as inserting an order or updating a customer record. OLAP systems support analytical workloads such as reports and aggregations.
+
+A database connection allows an application to communicate with a database server. Connection pooling reuses database connections and can reduce the overhead of creating new connections.
+
+Query optimization attempts to find an efficient execution plan for a SQL query. The database optimizer considers indexes, joins, filters, and estimated data sizes.
+
+Data integrity means that stored data remains accurate and consistent. Constraints such as NOT NULL, UNIQUE, PRIMARY KEY, and FOREIGN KEY help enforce integrity.
+
+A data migraA data migraA data migraA data migraA data migraA data migraA data migraA data migraA data migraA data migraA data migraA data migraA data migraA data migraA data migraA data migraA backup is a copy of data that can be used for recovery. Recovery procedures should be tested rather than assuming that backups will always work.
+
+Database security includes authentication, authorization, encryption, auditing, and protection against unauthorized access.
+A data pipeline is a sequence of operations that moves and transforms data. A pipeline may extract data from several sources, validate records, transform fields, and load the results into storage.
+
+Batch pipelines process data at scheduled intervals. Streaming pipelines process events continuously as they arrive.
+
+A pipeline can contain ingestion, validation, transformation, enrichment, storage, and monitoring stages. Each stage should have clearly defined inputs and outputs.
+
+Data ingestion is the process of collecting data from source systems. Sources can include databases, files, APIs, message queues, and application events.
+
+An API allows software systems to communicate through defined interfaces. An API may return data in formats such as JSON.
+
+JSON represents structured information using objects and arrays. It is commonly used by web APIs.
+
+CSV is a simple tabular file format. Each row normally represents a record and columns represent fields.
+
+Parquet is a columnar storage format commonly used in analytics systems. Columnar storage can reduce the amount of data read when queries access only selected columns.
+
+Data validation checks whether records satisfy expected rules. Validation may check requData validation checks whether records satisfy expected rules. Validation may check requData validation checks whetuitData validation checks whether records satisfy expected rules. Validation may check requData validation checks whether records satisfy expected rules. Validation data.
+
+Data lineage describes where data originated and how it changed as it moved through a system. Lineage helps with debugging, governance, and compliance.
+
+Data orchestration coordinates tasks and dependencies in a pipeline. An orchestrator can schedule jobs, handle retries, record execution history, and notify operators when failures occur.
+
+Apache Airflow represents workflApache Airflow represents workflApache Airflow represents workflApache Airflow represents workflApache ould be performed.
+
+Apache Spark is designed for distributed data processing. Spark can divide a large computation into tasks and execute those tasks across multiple workerApache Spark is designed for distributed data processing. Spark can divide a large computation into tasks and execute those tasks across multiple workerApache Spark is designed for distributed data processing. Spark can divide a large computation into tasks and execute those tasks across multiple workerApache Spark is designed for distributed data processing. Spark can  foApache Spark is designed for distributed data processing. Spark can divide a large computation into tasks and execute those tasks across multiple workstics of data lakes and data warehouses.
+
+Scalability describes the ability of a system to handle increasing workloads. Horizontal scaling adds more machines, while vertical scaling increases the resources of an existing machine.
+
+Reliability means that a system continues to operate correctly despite failures. Retries, checkpoints, backups, and monitoring can improve pipeline reliability.
+
+Observability helps engineers understand the internal state of a system. Logs, metrics, traces, and alerts are common observability mechanisms.
+
+A production pipeline should be idempotent when possible. An idempotent operation can be safely repeated without producing incorrect duplicate effects.
+
+Pipeline testing can include unit tests for transformations, integration tests for data sources, and data quality tests for outputs.
+
+Monitoring should track pipeline duration, failures, record counts, data freshness, and resource usage. Alerts should identify important failures without creating excessive noise.
+Natural language processing is a field of artificial intelligence focused on processing and understanding human language. NLP systems work with text, speech, documents, conversations, and other language data.
+
+Tokenization converts raw text into tokens that a model can process. Word tokenization treats words as units. Subword tokenization can represent unknown or uncommon words using smaller pieces. Byte-level tokenization can represent arbitrary text using byte representations.
+
+A vocabulary is a mapping between tokens and integer IDs. The model receives integer token IDs rather than raw strings. The tokenizer is responsible for converting text into IDs and converting generated IDs back into text.
+
+Byte pair encoding builds a vocabulary by repeatedly merging frequent pairs of symbols. A BPE tokenizer can represent common words with a single token while representing uncommon words using multiple subword tokens.
+
+The context window is the number of tokens that a model can process at one time. If a prompt is longer than the context window, the application may need to truncate, summarize, or retrieve only the most relevant information.
+
+An embedding is a vector representation of information. Word and sentence embeddinAn embedding is a vector representation of information. Word and sentence embeddinAn embedding is a vector representation of information. Word and sentence embeddinAn embedding is a vector representation of information. Word and sentence embeddinAn embedding is a vector rdicts the next token using previous tokens as context.
+
+Pretraining teaches a language model general language patterns from a large dataset. Fine-tuning adapts a pretrained model to a particular task or domain.
+
+Instruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstpreInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction t DeInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstpreInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstructioficInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInstruction tunInsovide source documents to a language model so that answers are based on retrieved evidence.
+
+An agent is a software system that can decide which actions or tools to use to complete a task. An agent can observe a request, reason about the task, call tools, inspect results, and continue until it reaches a stopping condition.
+
+Tool calling allows a language model to request an external function. Tools can provide capabilities such as database queries, web search, calculations, file access, or API calls.
+
+An agent loop commonly contains planning, action, observation, evaluation, and another decision. The loop should have limits on the number of steps to prevent infinite execution.
+
+A router can select an appropriate model, tool, database, or retrieval index based on the user's request. Routing can improve efficiency by sending each task to a specialized component.
+
+Multi-hop retrieval handles questions that require information from multiple sources or multiple retrieval steps. The system may retrieve one piece of inMulti-hop retrieval handles questions that require information from multiple sources orocuMulti-hop retrieval handles questions that require information from multiple sources or multiple retrieval steps. The system may retrieve one piece of inMulti-hop retrieval handles questions that require information from multiple tness, or completeness before the system produces a final answer.
+
+Evaluation is necessary because a system can appear to work while producing unreliable results. Evaluation datasets sEvaluation is necessary because a system can appear to work while producing unreliable results. Evaluation datasets sEvaluation is necessary because a system can appear to work elevance. Different metrics reveal different failure modes.
+
+A retrieval system should return documents that contain evidence relevant to the user's question. Retrieving many irrelevant documents can distract the language model and increase prompt length.
+
+Chunking is the process of splitting documents into smaller pieces. Fixed-size chunking is simple, while semantic chunking attempts to preserve meaningful sections.
+
+Chunk overlap repeats a portion of neighboring chunks. Overlap can preserve context when an important sentence spans a chunk boundary.
+
+A vector index stores numerical representations and supports similarity search. Approximate nearest neighbor methods allow efficient search over large collections of vectors.
+
+Metadata filtering can restrict retrieval by document type, date, user, department, or other attributes. Combining vector similarity with metadata filters can improve enterprise retrieval.
+
+Enterprise AI systems must enforce authorization. Retrieval results should be filtered according to the permissions of the current user.
+
+Prompt engineering is Prompt engineering is Prompt engineering is Prompt engineering is Prompt engineering is Prompt engineering is Prompt engineering is Prompt engineering is Prompt engineering is Prompt engineerineturn information in a predictable format. JSON schemas and validation can help applications safely consume model outputs.
+
+A production AI application should separate uA production AI application should separate uA production AI application should separate uA production AI application should separate
+CaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCm takes to respond. Throughput measures how many requests a system can process during a period. AI applications should monitor both metrics.
+
+Token usage affects the computational cost of languToken usage affects the computational cost of languToken usage affects the computational cost of languToken usage affects the computatparameters. Checkpoints allow training to be resumed and allow the best-performing model to be selected based on validation metrics.
+
+Early stopping terminates training when validation performance stops improving. It can reduce overfitting and unnecessary computation.
+
+A learning rate scheduler changes the learning rate during training. ScheA learning rate scheduler changes the learning rate during training. ScheA learning rate scheduler changes the learning rate during training. ScheA learning rate scheduler change A learning rate scheduler changes the learning rate during training. ScheA learning rate scheduler changes the learning rate during training. ScheA learning rate scheduler changes the learning rate during training. ScheA learning rate scheduion reduces the numerical precision used to represent model parameters. Quantized models can require less memory and can sometimes run faster on limited hardware.
+
+Model size is determined by the number of trainable parameters. Parameter count affects memory requirements and computational cost.
+
+A small language model can be useful for learning model architecture, tokenization, attention, training, inference, and evaluation. Production language models generally require much larger datasets and significantly more compute.
+
+A software system should fail safely when a model is uncertain. Instead of inventing information, an application can return an uncertainty message or request additional information.
+
+Security is important for AI systems. Applications should protect credentials, validate external inputs, restrict tool permissions, and avoid exposing private information through model outputs.
+
+Prompt injection is an attack where untrusted text attempts to manipulate the instructions followed by an AI system. Applications should treat retrieved documents and external content as untrusted data.
+
+An AI system that can call tools should use least privilege. Each tool should have only the permissions necessary for its task.
+
+Logging is useful for debugging AI systems. Logs can record request IDs, retrieval information, model latency, errors, and evaluation results while avoiding sensitive information.
+
+Observability allows developers to understand how an AI application behaves in production. Traces can show which retrieval steps, tools, and model calls were executed.
+
+A reliable AI application requires testing at multiple levels. Unit tests can validate individual functions. Integration tests can verify retrieval and model components. End-to-end tests can verify complete user workflows.
+
+Regression testing compares a new system version against previous results. It helps detect cases where an improvement in one area causes failures in another.
+
+An AI project should maintain a clear README containing architecture, installation instructions, configuration, usage examples, limitations, and evaluation results. Reproducibility makes a project easier for other developers to understand.
+
+Version control should track code and configuration changes. Large generated model files should generally be managed separately from ordinary source code when repository size becomes a concern.
+
+A good AI portfolio project should dA good AI portfolio project should dA good AI portfolio project should dA good AI portfolio project should dA good AI portfolio project should dA good AI portfolio prdecisions.
+DATA ENGINEERING
+
+Data engineering is the practice of collecting, transforming, 
+storing, and delivering data so that it can be used for 
+analytics, machine learning, reporting, and applications. A data 
+engineer designs systems that move data from source systems into 
+reliable destinations.
+
+A data pipeline is a sequence of operations that moves data from 
+one location to another. A typical pipeline extracts data from a 
+source, transforms the data, validates the results, and loads 
+the processed data into a destination.
+
+ETL stands for Extract, Transform, and Load. Extract means 
+reading data from a source. Transform means cleaning or changing 
+the data. Load means writing the transformed data into a 
+destination such as a database or data warehouse.
+
+ELT stands for Extract, Load, and Transform. In an ELT 
+architecture, raw data is first loaded into a storage or 
+warehouse system and transformations are performed after 
+loading.
+
+Batch processing handles data in groups at scheduled intervals. 
+Streaming processing handles data continuously as events arrive. 
+Batch processing is useful for daily reports, while streaming 
+can be useful for monitoring, fraud detection, and real-time 
+applications.
+
+A data warehouse is a system designed for analytical queries. 
+Data warehouses commonly store structured data and support 
+aggregation, filtering, joins, and reporting.
+
+A data lake stores large amounts of raw or processed data in its 
+original or semi-structured form. A lake can contain structured 
+data, JSON documents, logs, images, and other files.
+
+Data quality is important in every pipeline. Common data quality 
+problems include missing values, duplicate records, invalid 
+values, inconsistent formats, and incorrect relationships.
+
+A reliable pipeline should validate input data before processing 
+it. Validation can check required columns, data types, ranges, 
+uniqueness, null values, and referential relationships.
+
+Apache Spark is a distributed data processing framework. Spark 
+can process large datasets by dividing computation across 
+multiple machines. Spark supports batch processing, SQL, 
+streaming, and machine learning workloads.
+
+SQL is used to query relational databases. A SELECT statement 
+retrieves data. A WHERE clause filters rows. GROUP BY creates 
+groups for aggregation. ORDER BY sorts results. JOIN combines 
+related tables.
+
+A primary key uniquely identifies a row in a table. A foreign 
+key creates a relationship between tables by referring to a key 
+in another table.
+
+Indexes can improve query performance by providing an efficient 
+structure for finding records. Indexes can increase storage 
+usage and can make inserts and updates more expensive.
+
+A database transaction is a logical unit of work. Transactions 
+commonly follow the ACID properties: atomicity, consistency, 
+isolation, and durability.
+
+Cloud data engineering uses services for storage, compute, 
+databases, messaging, orchestration, and monitoring. A cloud 
+data pipeline may use object storage for raw files, distributed 
+compute for transformations, a warehouse for analytics, and an 
+orchestration system for scheduling.
+
+
+PYTHON
+
+Python is a general-purpose programming language widely used in 
+data engineering, machine learning, automation, and artificial 
+intelligence.
+
+A Python variable stores a reference to a value. Common Python 
+data types include integers, floating point numbers, strings, 
+lists, tuples, dictionaries, and sets.
+
+A list is an ordered collection that can contain multiple 
+values. A dictionary stores key-value pairs. A set stores unique 
+values.
+
+A function is a reusable block of code. Functions can accept 
+arguments and return values.
+
+A class defines the structure and behavior of objects. Methods 
+are functions defined inside a class.
+
+Exception handling allows a program to respond to errors without 
+immediately terminating. Python uses try, except, else, and 
+finally blocks for exception handling.
+
+Pandas is a Python library for working with structured data. A 
+DataFrame represents tabular data with rows and columns.
+
+NumPy provides arrays and numerical operations. Many machine 
+learning and scientific computing libraries use NumPy arrays 
+internally.
+
+A Python virtual environment isolates project dependencies. 
+Using a virtual environment helps prevent package conflicts 
+between projects.
+
+
+MACHINE LEARNING
+
+Machine learning is a field of artificial intelligence in which 
+models learn patterns from data.
+
+Supervised learning uses labeled examples. The model receives 
+input data and a target value and learns a mapping between them.
+
+Classification predicts a category. Examples include spam 
+detection and sentiment classification.
+
+Regression predicts a numerical value. Examples include price 
+prediction and demand forecasting.
+
+Unsupervised learning works with data without explicit target 
+labels. Clustering is an example of unsupervised learning.
+
+Training is the process of adjusting model parameters to reduce 
+an objective or loss function.
+
+Inference is the process of using a trained model to produce 
+predictions for new input.
+
+A loss function measures how different a model prediction is 
+from the expected target. During training, an optimizer changes 
+model parameters to reduce the loss.
+
+Gradient descent is an optimization algorithm. It calculates 
+gradients of the loss with respect to model parameters and 
+updates the parameters in the direction that reduces the loss.
+
+A learning rate controls the size of parameter updates. A 
+learning rate that is too large can make training unstable. A 
+learning rate that is too small can make training very slow.
+
+Overfitting occurs when a model learns the training data too 
+closely and performs poorly on unseen data. Underfitting occurs 
+when a model is too simple to learn the important patterns in 
+the data.
+
+A validation dataset is used to evaluate generalization during 
+development. A test dataset is normally reserved for final 
+evaluation.
+
+Regularization methods can reduce overfitting. Dropout randomly 
+removes some activations during training. Weight decay penalizes 
+large parameter values.
+
+Accuracy measures the fraction of correct predictions. Precision 
+measures how many predicted positive examples are actually 
+positive. Recall measures how many actual positive examples are 
+correctly identified. The F1 score combines precision and 
+recall.
+
+
+NEURAL NETWORKS
+
+A neural network contains layers of learnable parameters. Each 
+layer transforms its input into a new representation.
+
+An embedding converts discrete identifiers such as tokens into 
+continuous vectors.
+
+A hidden layer contains intermediate representations learned by 
+the network.
+
+An activation function introduces non-linearity. ReLU and GELU 
+are common activation functions.
+
+Backpropagation calculates gradients by applying the chain rule 
+through the network.
+
+An optimizer uses gradients to update parameters.
+
+Batch size determines how many training examples are processed 
+before an optimizer update.
+
+An epoch represents one complete pass through the training 
+dataset.
+
+
+TOKENIZATION
+
+Tokenization converts text into smaller units called tokens.
+
+A token can represent a complete word, part of a word, 
+punctuation, whitespace, or another text unit.
+
+A vocabulary maps tokens to integer token IDs.
+
+A language model does not directly process words as 
+human-readable strings. It processes numerical token IDs.
+
+Subword tokenization allows a model to represent common words as 
+complete tokens while representing uncommon words as multiple 
+smaller tokens.
+
+Byte Pair Encoding, commonly called BPE, begins with small units 
+and repeatedly merges frequently occurring pairs.
+
+BPE helps control vocabulary size while allowing the model to 
+represent words that were not explicitly stored as complete 
+vocabulary entries.
+
+A tokenizer has an encoder that converts text into token IDs and 
+a decoder that converts token IDs back into text.
+
+Special tokens can represent padding, unknown tokens, beginning 
+of sequence, and end of sequence.
+
+
+LANGUAGE MODELS
+
+A language model estimates probabilities over sequences of 
+tokens.
+
+Autoregressive language models predict the next token based on 
+previous tokens.
+
+For example, given the sequence "machine learning uses", a 
+language model predicts a probability distribution for the next 
+token.
+
+Next-token prediction is the core training objective of many 
+generative language models.
+
+During training, the model receives a sequence of tokens and 
+attempts to predict the next token at every position.
+
+Cross-entropy loss is commonly used for next-token prediction.
+
+A lower language-model loss generally indicates that the model 
+assigns higher probability to the correct next tokens.
+
+During generation, the model produces one token at a time. The 
+generated token is appended to the context and becomes input for 
+the next prediction.
+
+Greedy decoding selects the token with the highest probability.
+
+Temperature changes the sharpness of the probability 
+distribution. Lower temperature makes generation more 
+deterministic. Higher temperature produces more randomness.
+
+Top-k sampling restricts sampling to the k most probable tokens.
+
+Top-p sampling selects a group of tokens whose cumulative 
+probability reaches a chosen threshold.
+
+Repetition can occur when a language model repeatedly selects 
+tokens or phrases that become highly probable in the current 
+context.
+
+
+TRANSFORMERS
+
+The Transformer is a neural network architecture based on 
+attention mechanisms.
+
+Transformers process token representations using self-attention 
+and feed-forward networks.
+
+Self-attention allows each token to interact with other tokens 
+in the sequence.
+
+Attention uses three representations called Query, Key, and 
+Value.
+
+A query represents what the current token is looking for. A key 
+represents information that can be matched against a query. A 
+value contains the information that is passed forward after 
+attention is calculated.
+
+Attention scores are calculated using the similarity between 
+queries and keys.
+
+The scaled dot-product attention equation is:
+
+Attention(Q,K,V) = softmax(QK^T / sqrt(d_k))V
+
+The scaling factor prevents attention scores from becoming 
+excessively large when the dimensionality of the key vectors 
+increases.
+
+A causal language model must not allow a token to attend to 
+future tokens during training. A causal mask prevents attention 
+to future positions.
+
+Multi-head attention uses several attention heads. Each head can 
+learn different relationships between tokens.
+
+After attention, Transformer blocks commonly use a feed-forward 
+network.
+
+Layer normalization helps stabilize training.
+
+Residual connections allow information to flow around a neural 
+network layer and help deep networks train more effectively.
+
+Positional information tells the model where tokens occur in a 
+sequence. Transformers require positional information because 
+self-attention itself does not inherently provide token order.
+
+A Transformer block commonly contains normalization, 
+self-attention, residual connections, a feed-forward network, 
+and another residual connection.
+
+
+GPT
+
+GPT stands for Generative Pre-trained Transformer.
+
+A GPT-style model is an autoregressive Transformer language 
+model.
+
+A GPT model begins with token embeddings and positional 
+information.
+
+The embeddings are passed through multiple Transformer blocks.
+
+The final hidden representation is projected into 
+vocabulary-sized logits.
+
+Logits are unnormalized scores for possible next tokens.
+
+Softmax converts logits into probabilities.
+
+The model selects or samples a token from the probability 
+distribution and continues generation.
+
+Training a GPT model requires many examples of text. More 
+diverse and higher-quality training data generally allows the 
+model to learn more useful language patterns.
+
+A small GPT model can be useful for learning how tokenization, 
+embeddings, attention, Transformer blocks, loss functions, 
+optimization, and generation work.
+
+
+RAG
+
+Retrieval-Augmented Generation combines information retrieval 
+with language generation.
+
+A RAG system retrieves relevant information from an external 
+knowledge source before generating an answer.
+
+A typical RAG pipeline contains document loading, text cleaning, 
+chunking, embedding, vector storage, retrieval, and generation.
+
+Chunking divides large documents into smaller pieces.
+
+Good chunks should contain enough information to answer 
+questions while remaining focused.
+
+Embeddings represent text as vectors in a numerical space.
+
+Semantically similar text should have nearby vector 
+representations.
+
+A vector database stores embeddings and supports similarity 
+search.
+
+When a user asks a question, the question can be converted into 
+an embedding.
+
+The system searches the vector database for relevant chunks.
+
+The retrieved chunks are added to the model context.
+
+The language model uses the retrieved context to generate a 
+grounded answer.
+
+RAG can reduce hallucination by giving a language model access 
+to external information.
+
+RAG quality depends on both retrieval quality and generation 
+quality.
+
+If the correct information is not retrieved, the language model 
+may not be able to produce a correct grounded answer.
+
+Retrieval can use cosine similarity, dot product similarity, or 
+other distance measures.
+
+A RAG system can use reranking to improve the ordering of 
+retrieved documents.
+
+Query rewriting changes the user's original query into a form 
+that may produce better retrieval results.
+
+Multi-hop retrieval performs multiple retrieval steps when 
+answering a question requires information from several sources.
+
+
+AI AGENTS
+
+An AI agent is a system that uses a language model to reason 
+about a task and interact with tools or external systems.
+
+An agent can receive a goal, plan actions, call tools, observe 
+results, and decide what to do next.
+
+Tools allow an agent to perform operations that the language 
+model cannot perform by itself.
+
+Examples of tools include search, databases, calculators, APIs, 
+file systems, and application services.
+
+A tool call contains the information required to execute an 
+operation.
+
+The tool returns an observation or result to the agent.
+
+The agent uses the observation to decide the next action.
+
+Agent loops should have limits on the number of steps to prevent 
+infinite execution.
+
+Production agents should also consider latency, cost, 
+reliability, permissions, security, and error handling.
+
+Agent memory can store useful information across multiple 
+interactions.
+
+Short-term memory contains the current conversation context. 
+Long-term memory can store information for future tasks.
+
+A planner can decompose a complex request into smaller actions.
+
+A router can choose which tool, data source, or specialized 
+agent should handle a request.
+
+A validator can check whether a tool result or generated answer 
+satisfies required constraints.
+
+MCP, or Model Context Protocol, provides a standardized way for 
+AI applications to connect models with tools and external data 
+sources.
+
+An MCP server can expose tools, resources, or prompts to an MCP 
+client.
+
+MCP can make integrations reusable across different AI 
+applications.
+
+
+MODEL EVALUATION
+
+Language model evaluation should measure both numerical metrics 
+and actual generated behavior.
+
+Validation loss measures how well the model predicts tokens in 
+held-out data.
+
+Perplexity is related to language-model loss and can be 
+interpreted as a measure of uncertainty over the next token.
+
+A good evaluation set should be separated from the training 
+data.
+
+Generation tests should include different prompts and should 
+check coherence, relevance, repetition, and factual consistency.
+
+Automated metrics are useful, but human inspection of generated 
+samples is also important.
+
+A model should be evaluated on prompts that represent its 
+intended use case.
+
+Overfitting can be detected when training loss continues 
+decreasing while validation loss begins increasing.
+
+Early stopping can stop training when validation performance 
+stops improving.
+
+A checkpoint stores model parameters so that the best version 
+can be restored later.
+
+
+PRODUCTION AI SYSTEMS
+
+A production AI system requires more than a trained model.
+
+Important components include data pipelines, model serving, 
+monitoring, logging, evaluation, security, access control, and 
+error handling.
+
+Observability allows developers to understand system behavior.
+
+Logs can record requests, tool calls, errors, latency, and model 
+outputs while respecting privacy requirements.
+
+Model versioning makes it possible to reproduce and compare 
+experiments.
+
+Data versioning tracks which dataset was used to train a model.
+
+A reproducible experiment records model configuration, tokenizer 
+version, dataset version, random seeds, training parameters, and 
+evaluation results.
+
+Security is important when models can access tools or private 
+information.
+
+An AI system should follow the principle of least privilege and 
+only allow the operations required for a task.
+
+Prompt injection is an attack in which untrusted text attempts 
+to influence the behavior of an AI system.
+
+Applications that retrieve external content should treat 
+retrieved text as untrusted data.
+
+Tool permissions should be explicitly controlled.
+
+A reliable AI system should have fallbacks when retrieval, 
+tools, or model generation fail.
+
+
+END OF TECHNICAL CORPUS
+
+
+DEEP LEARNING
+
+Deep learning is a branch of machine learning that uses neural 
+networks with multiple layers to learn representations from 
+data.
+
+A deep neural network can contain an input layer, multiple 
+hidden layers, and an output layer. Each layer transforms the 
+representation produced by the previous layer.
+
+Neural network parameters are usually initialized with small 
+values. During training, the parameters are updated using 
+gradients calculated through backpropagation.
+
+A neuron computes a weighted combination of its inputs and 
+applies an activation function.
+
+The weights determine how strongly different input features 
+influence the output.
+
+Bias parameters allow a layer to shift its activation function.
+
+A linear layer applies a matrix transformation followed by an 
+optional bias.
+
+The output of one neural network layer becomes the input of the 
+next layer.
+
+GELU is an activation function commonly used in Transformer 
+architectures. GELU smoothly weights inputs rather than simply 
+setting negative values to zero.
+
+ReLU is a simple activation function defined as the maximum of 
+zero and the input.
+
+Normalization can make optimization more stable by controlling 
+the distribution of intermediate representations.
+
+Layer normalization normalizes features within each individual 
+example and is commonly used in Transformer models.
+
+Batch normalization normalizes activations using statistics 
+calculated across a batch. It is common in convolutional neural 
+networks.
+
+Residual connections add the input of a layer to its output. 
+They help information and gradients flow through deep networks.
+
+A neural network can learn hierarchical representations. Earlier 
+layers may learn simpler patterns while later layers can combine 
+those patterns into more complex representations.
+
+
+TRAINING NEURAL NETWORKS
+
+A training loop repeatedly loads batches, performs a forward 
+pass, calculates loss, computes gradients, updates parameters, 
+and clears gradients.
+
+The forward pass calculates the model prediction from the input.
+
+The loss function compares predictions with target values.
+
+Backward propagation calculates the gradient of the loss with 
+respect to model parameters.
+
+The optimizer updates parameters using the calculated gradients.
+
+Gradients should normally be cleared before calculating the next 
+update.
+
+An optimizer such as AdamW maintains information about previous 
+gradients to make parameter updates more effective.
+
+Adam combines ideas related to momentum and adaptive learning 
+rates.
+
+AdamW separates weight decay from the gradient update.
+
+A learning-rate scheduler changes the learning rate during 
+training.
+
+Cosine annealing gradually decreases the learning rate following 
+a cosine-shaped schedule.
+
+Early stopping terminates training when validation performance 
+stops improving.
+
+A checkpoint stores the parameters of a model at a particular 
+point during training.
+
+Saving the best validation checkpoint is usually better than 
+simply saving the final epoch because later epochs may overfit.
+
+A random seed can make experiments more reproducible.
+
+Reproducibility is important when comparing different model 
+configurations.
+
+Training metrics should be recorded so experiments can be 
+compared later.
+
+
+LLM TRAINING
+
+Large language models are neural networks trained on very large 
+collections of text.
+
+Pretraining teaches a language model general patterns of 
+language using a self-supervised objective.
+
+Self-supervised learning creates training targets from the input 
+data itself.
+
+In next-token prediction, the target for each position is the 
+token immediately following the input token.
+
+For example, the sequence "Data engineering is" can be used to 
+predict the next token "powerful".
+
+During training, the model predicts every next token in a 
+sequence simultaneously using a causal attention mask.
+
+Teacher forcing means that the model receives the correct 
+previous tokens while learning to predict the next token.
+
+During inference, the model instead receives its own previously 
+generated tokens.
+
+This difference between training and inference is called 
+exposure bias.
+
+A language model's parameters contain learned numerical 
+representations of patterns from its training data.
+
+Model size is often described by the number of parameters.
+
+A parameter is a learned numerical value that is adjusted during 
+training.
+
+Increasing the number of parameters can increase model capacity, 
+but larger models also require more computation and data.
+
+Training data quality is extremely important. Duplicated, noisy, 
+incorrect, or poorly formatted data can reduce model quality.
+
+Data preprocessing may include removing unwanted markup, 
+normalizing text, filtering corrupted documents, and removing 
+duplicates.
+
+Data contamination occurs when evaluation information appears in 
+training data and can make evaluation results misleading.
+
+
+CONTEXT WINDOWS
+
+A context window is the maximum number of tokens a model can 
+process as context in a single operation.
+
+If a model has a context length of 2048 tokens, it cannot 
+directly process a sequence longer than 2048 tokens without a 
+strategy for handling longer text.
+
+Longer context windows allow models to consider more information 
+at once but increase computational requirements.
+
+During autoregressive generation, the model repeatedly adds new 
+tokens to the context.
+
+When the context becomes longer than the model's maximum length, 
+older tokens may need to be removed or compressed.
+
+Context management is important in long conversations and RAG 
+systems.
+
+A RAG application can retrieve only the most relevant chunks to 
+avoid filling the context window with unnecessary information.
+
+
+ATTENTION
+
+Attention allows a neural network to dynamically determine which 
+parts of an input are important.
+
+Self-attention means that queries, keys, and values are 
+generated from the same sequence.
+
+Cross-attention uses queries from one sequence and keys and 
+values from another sequence.
+
+Attention weights represent how strongly one token attends to 
+another token.
+
+The attention matrix contains relationships between every pair 
+of positions in a sequence.
+
+For a sequence of length N, standard self-attention creates an N 
+by N attention relationship matrix.
+
+This makes standard attention computationally expensive for very 
+long sequences.
+
+Causal attention restricts each position so that it can only 
+attend to itself and earlier positions.
+
+The causal mask is usually represented as a lower triangular 
+matrix.
+
+The diagonal of a causal attention mask allows each token to 
+attend to itself.
+
+Positions above the diagonal are masked because they represent 
+future tokens.
+
+Attention scores are converted into probabilities using softmax.
+
+The probabilities across the attended positions sum to one.
+
+Multi-head attention allows different heads to learn different 
+types of relationships.
+
+One attention head might focus on local relationships while 
+another may learn longer-range relationships.
+
+The outputs of the attention heads are concatenated and 
+projected back into the model embedding dimension.
+
+
+TRANSFORMER ARCHITECTURE
+
+A Transformer is built from repeated Transformer blocks.
+
+A typical Transformer block contains self-attention followed by 
+a feed-forward network.
+
+Residual connections surround the major sublayers.
+
+Layer normalization is applied to stabilize the representations.
+
+The Transformer architecture avoids recurrence and can process 
+all positions in a sequence in parallel during training.
+
+Parallel processing makes Transformers highly suitable for 
+large-scale training.
+
+The Transformer architecture was introduced as an alternative to 
+recurrent architectures for sequence modeling.
+
+Modern large language models are largely based on Transformer 
+architectures or architectures derived from them.
+
+GPT uses decoder-style causal Transformer blocks.
+
+An encoder Transformer can attend bidirectionally and is useful 
+for tasks such as representation learning.
+
+Decoder-style causal models are designed for autoregressive 
+generation.
+
+The output vocabulary projection converts the final hidden state 
+into one score for every vocabulary token.
+
+The number of output logits equals the vocabulary size.
+
+
+POSITIONAL INFORMATION
+
+Self-attention alone does not inherently know the order of 
+tokens.
+
+Positional information provides information about token 
+positions.
+
+Learned positional embeddings assign a trainable vector to each 
+position.
+
+The position embedding is added to the token embedding before 
+the Transformer blocks.
+
+Sinusoidal positional encoding uses deterministic mathematical 
+functions to represent positions.
+
+Rotary Position Embeddings, commonly called RoPE, encode 
+positional information by rotating query and key 
+representations.
+
+RoPE is widely used in modern language models.
+
+Position representations allow a model to distinguish sequences 
+such as "dog bites man" and "man bites dog".
+
+The maximum context length of a model can be limited by the 
+positional representation used by the architecture.
+
+
+TOKEN EMBEDDINGS
+
+Token embeddings convert token IDs into dense numerical vectors.
+
+Each vocabulary token has a corresponding embedding vector.
+
+If the embedding dimension is 512, each token is represented by 
+a vector containing 512 numerical values.
+
+Tokens with similar learned usage patterns may develop similar 
+embedding representations.
+
+Embeddings are learned during language-model training.
+
+The embedding matrix has dimensions vocabulary size by embedding 
+dimension.
+
+For example, a vocabulary of 10,000 tokens and an embedding 
+dimension of 512 requires an embedding matrix containing 
+5,120,000 parameters.
+
+The same embedding representation can be reused at different 
+positions in a sequence.
+
+
+LOGITS AND PROBABILITIES
+
+The final layer of a language model produces logits.
+
+A logit is an unnormalized score for a possible next token.
+
+A vocabulary with 10,000 tokens produces 10,000 logits for each 
+predicted position.
+
+Softmax converts logits into probabilities.
+
+The highest probability token is the most likely token according 
+to the model.
+
+Greedy decoding selects the highest probability token every 
+time.
+
+Sampling introduces controlled randomness.
+
+Temperature modifies logits before softmax.
+
+When temperature is below one, high-probability tokens become 
+more dominant.
+
+When temperature is above one, the probability distribution 
+becomes flatter.
+
+Top-k sampling keeps only the k highest-scoring tokens before 
+sampling.
+
+Top-p sampling keeps the smallest set of tokens whose cumulative 
+probability exceeds a chosen probability threshold.
+
+Sampling parameters strongly affect the style and diversity of 
+generated text.
+
+
+LANGUAGE MODEL LOSS
+
+Cross-entropy loss measures the difference between the target 
+token distribution and the predicted distribution.
+
+For a single target token, the loss becomes larger when the 
+model assigns a low probability to the correct token.
+
+The training objective is to minimize the average cross-entropy 
+loss across training examples.
+
+Training loss measures performance on examples used to optimize 
+the model.
+
+Validation loss measures performance on examples that were not 
+used directly for parameter updates.
+
+A model can have low training loss and high validation loss when 
+it overfits.
+
+The gap between training and validation loss provides 
+information about generalization.
+
+Perplexity can be calculated from cross-entropy loss.
+
+Perplexity approximately represents how uncertain the model is 
+when predicting the next token.
+
+Lower perplexity generally indicates better predictive 
+performance on the evaluation dataset.
+
+
+RAG ARCHITECTURE
+
+A production RAG pipeline usually begins by ingesting documents.
+
+Documents can come from PDFs, web pages, databases, cloud 
+storage, internal knowledge bases, or application APIs.
+
+Documents are cleaned before being divided into chunks.
+
+Chunking strategies include fixed-size chunks, sentence-based 
+chunks, paragraph-based chunks, and semantic chunks.
+
+Chunk overlap preserves information across chunk boundaries.
+
+Each chunk is converted into an embedding vector.
+
+The vectors are stored in a vector index or vector database.
+
+The original chunk text and metadata are usually stored 
+alongside the vector.
+
+Metadata can contain document name, page number, section, 
+timestamp, source, and access information.
+
+At query time, the user's question is embedded using the same or 
+compatible embedding model.
+
+Similarity search returns candidate chunks.
+
+The system may retrieve more candidates than it ultimately sends 
+to the language model.
+
+A reranker can score the candidates more precisely.
+
+The highest-quality chunks are inserted into the generation 
+context.
+
+The language model generates an answer using the retrieved 
+information.
+
+A citation system can show which documents or chunks support the 
+generated answer.
+
+A grounded RAG system should avoid inventing information that is 
+not supported by retrieved evidence.
+
+
+ADVANCED RAG
+
+Naive RAG performs retrieval followed directly by generation.
+
+Naive RAG can fail when the user query is ambiguous or poorly 
+matched to the stored documents.
+
+Query rewriting can improve retrieval by transforming a vague 
+query into a more precise search query.
+
+Query expansion can generate multiple related queries.
+
+Multi-query retrieval searches for multiple interpretations of 
+the same question.
+
+Hybrid retrieval combines semantic vector search with keyword 
+search.
+
+Keyword retrieval is useful when exact terms, identifiers, 
+product names, or technical expressions matter.
+
+Dense retrieval represents queries and documents using 
+embeddings.
+
+Sparse retrieval represents documents using sparse lexical 
+representations.
+
+Reranking can reorder retrieved documents after an initial 
+retrieval stage.
+
+Corrective RAG evaluates retrieved evidence and can perform 
+another retrieval step when the evidence is insufficient.
+
+Self-RAG allows a model to reason about whether retrieval is 
+needed and whether retrieved information supports its response.
+
+Agentic RAG adds planning and tool use to the retrieval process.
+
+A retrieval agent can decide which source to search, which query 
+to use, and whether additional evidence is required.
+
+A robust RAG system should have a maximum number of retrieval 
+iterations.
+
+Fallback behavior should be defined when no useful evidence is 
+found.
+
+
+VECTOR DATABASES
+
+A vector database stores numerical representations of data and 
+supports similarity search.
+
+A vector is an ordered collection of numerical values.
+
+Vector similarity can be calculated using cosine similarity, dot 
+product, or Euclidean distance.
+
+Cosine similarity measures the angle between two vectors.
+
+A higher cosine similarity usually indicates greater semantic 
+similarity.
+
+Approximate nearest-neighbor indexes can make vector search 
+faster for large datasets.
+
+FAISS is a library for efficient similarity search over dense 
+vectors.
+
+Chroma is a vector database designed for storing and querying 
+embeddings.
+
+A vector database usually stores an identifier, embedding, 
+document content, and metadata.
+
+Metadata filtering can restrict retrieval to documents matching 
+specific attributes.
+
+For example, a RAG system can retrieve only documents where 
+department equals engineering.
+
+Vector dimensions depend on the embedding model.
+
+Changing the embedding model can require rebuilding the vector 
+index.
+
+
+AI AGENTS AND TOOL USE
+
+An agent can use a language model as a reasoning component.
+
+A simple agent loop can be represented as:
+
+User request -> Planning -> Tool call -> Observation -> Decision 
+-> Final response.
+
+The agent decides which action should happen next.
+
+A tool schema describes the tool name, arguments, and expected 
+behavior.
+
+The language model generates a structured tool call.
+
+The application executes the tool outside the language model.
+
+The tool result is returned to the model as an observation.
+
+The model can then decide whether another tool call is required.
+
+Tool use allows a language model to interact with real systems.
+
+Examples include SQL databases, search engines, calendars, file 
+systems, calculators, APIs, and business applications.
+
+Agents should validate tool arguments before execution.
+
+Dangerous operations should require additional authorization.
+
+An agent should not automatically receive unrestricted access to 
+a system.
+
+Tool failures should be handled explicitly.
+
+Timeouts prevent a slow external service from blocking the 
+entire agent.
+
+Retries can recover from temporary failures but should have 
+limits.
+
+Idempotency is important when tools perform operations that 
+change external state.
+
+An idempotent operation can be safely repeated without producing 
+unintended duplicate effects.
+
+
+MCP
+
+Model Context Protocol is a protocol for connecting AI 
+applications with external tools and resources.
+
+An MCP client communicates with MCP servers.
+
+An MCP server can expose tools that perform operations.
+
+An MCP server can also expose resources containing information.
+
+The client discovers the capabilities provided by the server.
+
+A model can decide to call an available tool through the 
+application.
+
+MCP provides a standardized interface instead of requiring every 
+AI application to implement a completely different integration.
+
+A database MCP server could expose tools for querying data.
+
+A file-system MCP server could expose controlled file 
+operations.
+
+An application can connect to multiple MCP servers.
+
+Security and authorization remain important when MCP tools can 
+access private systems.
+
+MCP does not make an AI model intelligent by itself. It provides 
+a standardized mechanism for connecting models and applications 
+to external capabilities.
+
+
+AI SYSTEM SECURITY
+
+AI applications should treat external text as untrusted input.
+
+Prompt injection occurs when malicious or unintended 
+instructions are included in user input or retrieved content.
+
+A retrieved document should not automatically be treated as an 
+instruction to execute actions.
+
+Tool permissions should be restricted.
+
+Sensitive operations should require authorization.
+
+Secrets such as API keys and passwords should not be placed 
+directly into prompts or source code.
+
+Environment variables can be used to provide configuration 
+values securely.
+
+Logs should avoid exposing sensitive information.
+
+Input validation should happen before external tools are called.
+
+Output validation can detect malformed or unsafe results.
+
+Production systems should define clear trust boundaries between 
+users, models, retrieved content, and tools.
+
+
+AI EVALUATION
+
+Evaluation is necessary to determine whether an AI system 
+actually works.
+
+A language model can be evaluated using held-out text and 
+next-token loss.
+
+A RAG system should evaluate retrieval separately from 
+generation.
+
+Retrieval recall measures whether the correct information 
+appears among retrieved results.
+
+Precision measures how much of the retrieved information is 
+relevant.
+
+Generation evaluation can measure correctness, relevance, 
+groundedness, and clarity.
+
+A benchmark dataset should contain representative questions and 
+expected answers or supporting documents.
+
+Regression tests ensure that changes do not unexpectedly reduce 
+system quality.
+
+A model should be tested on both normal and difficult inputs.
+
+Evaluation prompts should cover the intended use cases of the 
+application.
+
+Human evaluation can identify problems that automated metrics 
+miss.
+
+
+DEPLOYMENT
+
+Model inference means running a trained model to generate 
+predictions.
+
+A model can run locally on a CPU or GPU.
+
+Quantization reduces the numerical precision of model parameters 
+to decrease memory usage.
+
+Common numerical formats include FP32, FP16, BF16, INT8, and 
+lower-bit representations.
+
+Smaller numerical formats can reduce memory requirements but may 
+affect model quality.
+
+CPU inference can be useful for small models and development 
+environments.
+
+GPU inference is usually much faster for larger neural networks.
+
+Batch inference processes multiple inputs together.
+
+Streaming generation returns generated tokens incrementally 
+instead of waiting for the complete response.
+
+A model server exposes inference through an application 
+interface.
+
+Monitoring should track latency, throughput, errors, memory 
+usage, and model quality.
+
+A production deployment should have a rollback strategy for 
+problematic model versions.
+
+
+END OF EXTENDED TECHNICAL CORPUS
