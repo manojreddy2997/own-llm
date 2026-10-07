@@ -442,6 +442,41 @@ The goal is to understand how a GPT-style model works internally rather than sim
 
 The current version successfully trains a GPT-style model locally and generates text from user prompts.
 
+## Results
+
+### Training Performance
+
+| Metric | Value |
+|---|---:|
+| Vocabulary Size | 1,000 |
+| Total Tokens | 21,666 |
+| Training Tokens | 19,499 |
+| Validation Tokens | 2,167 |
+| Context Length | 64 |
+| Best Validation Loss | 4.4517 |
+| Optimizer | AdamW |
+| Learning Rate | 0.0003 |
+
+### Sample Generation
+
+The trained model can generate text from a given prompt using temperature and Top-K sampling.
+
+**Prompt:**
+
+Data engineering
+
+**Generation:**
+
+Data engineering ...
+
+> Note: Because this is a small GPT model trained on a limited technical corpus, generated text may contain repetition, malformed words, or topic shifts.
+
+### Training Behavior
+
+Training loss decreased substantially during training, while validation loss reached its best value at **4.4517** before early stopping was triggered.
+
+The model checkpoint with the best validation loss is saved automatically during training.
+
 ## License
 
 This project is intended for educational and portfolio purposes.
