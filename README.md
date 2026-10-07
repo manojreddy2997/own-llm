@@ -29,6 +29,7 @@ The model runs locally and does not require an external LLM API.
 * Local text generation
 
 ## Architecture
+![Own-LLM Architecture](architecture.png)
 
 ```text
 Input Text
